@@ -9,9 +9,9 @@ public class MagicNumbers {
 
         if (num1 % 2 == 0 && num2 % 2 == 0){
             System.out.println((num1 / 2 + num2 / 2));
-        } else if (num1 % 2 == 0) {
+        } else if (num1 % 2 == 0 && num2 % 2 != 0) {
             System.out.println(num1 / 2 + num2);
-        } else if (num2 % 2 == 0) {
+        } else if (num1 % 2 != 0 && num2 % 2 == 0) {
             System.out.println(num1 + num2 /2);
         } else if (num1 % 2 != 0 && num2 % 2 != 0) {
             System.out.println((num1 + num2));
