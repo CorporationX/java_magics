@@ -5,7 +5,7 @@ public class FacultyPoints {
         gryffindorPoints += 10;
         gryffindorPoints -= 30;
         gryffindorPoints += 50;
-        gryffindorPoints -= 1;
+        gryffindorPoints--;
 
         System.out.println("Итоговые баллы факультета Гриффиндор: " + gryffindorPoints);
     }
