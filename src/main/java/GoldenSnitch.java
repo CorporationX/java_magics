@@ -4,14 +4,14 @@ public class GoldenSnitch {
     public static void main(String[] args){
         int num = 50;
         Random random = new Random();
-        while (num == 50){
+        while (true){
             int control = random.nextInt(101);
             if (control == num){
-                System.out.println("Снитч пойман! Игра закончена.");
+                System.out.println("\nСнитч пойман! Игра закончена.");
                 break;
             }
             else{
-                System.out.println("!");
+                System.out.print("!");
             }
         }
     }
