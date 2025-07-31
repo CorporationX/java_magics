@@ -1,6 +1,7 @@
 public class NumbersAnalyzer {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int[] num = {1, 14, 7, 31, 53};
+
         int min = num[0];
         int max = num[0];
         for (int j : num) {
@@ -9,8 +10,8 @@ public class NumbersAnalyzer {
             }
             if (j > max) {
                 max = j;
+                System.out.println("Минимальное число: " + min + "\n" + "Максимальное число: " + max);
             }
         }
-        System.out.println("Минимальное число: " + min + "\n" + "Максимальное число: " + max);
     }
 }
