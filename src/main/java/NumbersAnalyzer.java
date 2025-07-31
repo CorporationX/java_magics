@@ -10,8 +10,8 @@ public class NumbersAnalyzer {
             }
             if (j > max) {
                 max = j;
-                System.out.println("Минимальное число: " + min + "\n" + "Максимальное число: " + max);
             }
         }
+        System.out.println("Минимальное число: " + min + "\n" + "Максимальное число: " + max);
     }
 }
