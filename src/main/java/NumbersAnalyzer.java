@@ -1,14 +1,14 @@
 public class NumbersAnalyzer {
     public static void main(String[] args){
         int[] num = {1, 14, 7, 31, 53};
-        int min = 100;
-        int max = -100;
-        for (int i = 0; i<num.length; i++){
-            if(num[i]<min){
-                min = num[i];
+        int min = num[0];
+        int max = num[0];
+        for (int j : num) {
+            if (j < min) {
+                min = j;
             }
-            if(num[i]>max){
-                max = num[i];
+            if (j > max) {
+                max = j;
             }
         }
         System.out.println("Минимальное число: " + min + "\n" + "Максимальное число: " + max);
