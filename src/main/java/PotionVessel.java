@@ -11,8 +11,8 @@ public class PotionVessel {
         PotionVessel potionGermiona = new PotionVessel("Оборотное зелье", 150, true, germiona);
         PotionVessel potionDrako = new PotionVessel(50, drako);
 
-        potionGermiona.dataOutput(potionGermiona);
-        potionDrako.dataOutput(potionDrako);
+        dataOutput(potionGermiona);
+        dataOutput(potionDrako);
     }
 
     // Конструктор со всеми параметрами
@@ -32,9 +32,9 @@ public class PotionVessel {
     }
 
     // Метод, который печатает данные на экран
-    public void dataOutput(PotionVessel potionVessel) {
+    public static void dataOutput(PotionVessel potionVessel) {
         System.out.println("Сосуд: " + potionVessel.potion
-                + "\nОбъем: " + potionVessel.volume
+                + "\nОбъем: " + potionVessel.volume + " мл"
                 + "\nМагическое: " + potionVessel.isMagical
                 + "\nПринадлежит: " + potionVessel.creator.name + "\n");
     }
