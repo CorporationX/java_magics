@@ -6,7 +6,7 @@ public class MagicNumbers {
         int num1 = random.nextInt(0,10);
         int num2 = random.nextInt(3,17);
 
-        if(num1%2==0 && num2%2==0){
+        if(num1 % 2 == 0 && num2 % 2 == 0){
             System.out.println("Первое условие: " + (num1/2 + num2/2));
         } else if(num1 % 2 == 0){
             System.out.println("Второе условие: " + (num1/2 + num2));
