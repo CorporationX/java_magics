@@ -2,7 +2,7 @@ public class WizardCard {
     public static void main(String[] args) {
 
     String name = "Гарри Поттер";
-    byte age = 11;
+    int age = 11;
     double heigh = 1.45;
     boolean isWandExists = true;
 
