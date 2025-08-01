@@ -5,10 +5,10 @@ public class GoldenSnitch {
         int control = 50;
         Random random = new Random();
 
-        int r;
+        int currentNumber;
         while (true) {
-            r = random.nextInt(0,101);
-            if (r != control) {
+            currentNumber = random.nextInt(0,101);
+            if (currentNumber != control) {
                 System.out.print("!");
             } else {
                 System.out.println("\n" + "Снитч пойман! Игра закончена.");
