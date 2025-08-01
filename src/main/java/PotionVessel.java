@@ -4,17 +4,6 @@ public class PotionVessel {
     boolean isMagical;
     HogwartsStudent creator;
 
-    public static void main(String[] args) {
-        HogwartsStudent germiona = new HogwartsStudent("Гермиона", 14);
-        HogwartsStudent drako = new HogwartsStudent("Драко", 14);
-
-        PotionVessel potionGermiona = new PotionVessel("Оборотное зелье", 150, true, germiona);
-        PotionVessel potionDrako = new PotionVessel(50, drako);
-
-        dataOutput(potionGermiona);
-        dataOutput(potionDrako);
-    }
-
     // Конструктор со всеми параметрами
     public PotionVessel(String potion, double volume, boolean isMagical, HogwartsStudent creator) {
         this.potion = potion;
