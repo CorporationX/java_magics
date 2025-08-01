@@ -20,6 +20,6 @@ public class MagicNumbers {
             result = num1 + num2;
         }
         System.out.println("Сгенерированные числа: " + num1 + ", " + num2);
-        System.out.println("Рузультат: " + result);
+        System.out.println("Результат: " + result);
     }
 }
