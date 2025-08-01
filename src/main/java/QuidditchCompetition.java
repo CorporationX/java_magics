@@ -6,7 +6,7 @@ public class QuidditchCompetition {
         boolean passedMedicalCheck = true;
         int trainingSessionsAttended = 4;
 
-        boolean canPlay = (age > 11) && hasBroom && passedMedicalCheck && (trainingSessionsAttended >= 4);
+        boolean canPlay = (age > 11) && hasBroom && passedMedicalCheck && (trainingSessionsAttended >= 3);
 
         System.out.println(name + " допущен к матчу: " + canPlay);
     }
