@@ -39,9 +39,7 @@ public class Faculty {
     }
 
     static void leader(Faculty faculty1, Faculty faculty2) {
-        if (faculty1.isLeader(faculty2)) {
-            System.out.println("Лидирует: " + faculty1.name);
-        }
-        else System.out.println("Лидирует: " + faculty2.name);
+        String result = faculty1.isLeader(faculty2) ? faculty1.name : faculty2.name;
+        System.out.println("Лидирует: " + result);
     }
 }
