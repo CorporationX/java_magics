@@ -30,5 +30,15 @@ public class FacultyMain {
         griffindor.printInfo();
         slizerin.printInfo();
         Faculty.leader(slizerin, griffindor);
+
+
+        // тест 3 (ничья)
+        System.out.println();
+
+        griffindor.addPoints(10);
+
+        griffindor.printInfo();
+        slizerin.printInfo();
+        Faculty.leader(slizerin, griffindor);
     }
 }
