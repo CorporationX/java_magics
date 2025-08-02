@@ -6,7 +6,7 @@ public class PotionVesselMain {
 
         HogwartsStudent ron = new HogwartsStudent("Рон", 17, wandRon);
         Wand wandRon = new Wand(35, "Волос единорога", "Ясень");
-        PotionVessel potion2 = new PotionVessel(50.0, false, ron);
+        PotionVessel potion2 = new PotionVessel(50.0, ron);
 
         printPotionInfo(potion1);
         printPotionInfo(potion2);

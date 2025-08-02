@@ -11,7 +11,7 @@ public class PotionVessel {
         this.creator = creator;
     }
 
-    public PotionVessel(double volume, boolean isMagical, HogwartsStudent creator) {
+    public PotionVessel(double volume, HogwartsStudent creator) {
         this.potionName = "Неизвестно";
         this.volume = volume;
         this.isMagical = false;
