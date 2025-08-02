@@ -15,7 +15,7 @@ public class SpeedCalculator {
         }
         double averageSpeed = sum / speed.length;
 
-        System.out.println("Суммарная скорость: " + sum);//не понимаю как правильно вывести это на новую строку
+        System.out.println("\nСуммарная скорость: " + sum);
         System.out.println("Средняя скорость: " + averageSpeed);
     }
 }
