@@ -7,8 +7,14 @@ public class BasicSpellsPractice {
         int wandLength = getWandLength();
         System.out.println("Длина палочки: " + wandLength + " дюймов");
 
-        String chant = getHouseChant("Гриффиндор");
-        System.out.println("Девиз факультета: " + chant);
+        String chant1 = getHouseChant("Гриффиндор");
+        System.out.println("Девиз факультета \"Гриффиндор\": " + chant1);
+        String chant2 = getHouseChant("Пуффендуй");
+        System.out.println("Девиз факультета \"Пуффендуй\": " + chant2);
+        String chant3 = getHouseChant("Слизерин");
+        System.out.println("Девиз факультета \"Слизерин\": " + chant3);
+        String chant4 = getHouseChant("Когтевран");
+        System.out.println("Девиз факультета \"Когтевран\": " + chant4);
     }
 
     static void castLumos() {
