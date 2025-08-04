@@ -1,6 +1,10 @@
 public class MagicCreatureMain {
     public static void main(String[] args) {
-        MagicCreature pushistik = new MagicCreature("Пушистик", 70, 65);
+        MagicCreature pushistik = new MagicCreature();
+        pushistik.setName("Пушистик");
+        pushistik.setHealth(60);
+        pushistik.setMood(70);
+
         pushistik.printStatus();
 
         pushistik.feed(5);
