@@ -6,8 +6,10 @@ public class MagicCreature {
     // Конструктор со всеми полями
     public MagicCreature(String name, int health, int mood) {
         this.name = name;
-        this.health = health;
-        this.mood = mood;
+//        this.health = health;
+//        this.mood = mood;
+        changeHealth(health);
+        changeMood(mood);
     }
 
     public String getName() {
@@ -28,7 +30,7 @@ public class MagicCreature {
             System.out.println("Можно больше не кормить!");
             return;
         }
-        System.out.println("Вы покормили " + this.name);
+        System.out.println("Вы покормили существо \"" + this.name + "\"");
         changeHealth(food / 2);
         changeMood(food / 3);
     }
@@ -36,10 +38,10 @@ public class MagicCreature {
     // поиграть с существом (повышает настроение на 10, но снижает здоровье на 5, т.к. существо устает)
     void play() {
         if (this.health == 0) {
-            System.out.println(this.name + " Играть больше не может, здоровье на 0..");
+            System.out.println("\"" + this.name + "\" играть больше не может, здоровье на 0..");
             return;
         }
-        System.out.println("Вы поиграли с " + this.name);
+        System.out.println("Вы поиграли с существом \"" + this.name + "\"");
         changeMood(10);
         changeHealth(-5);
     }
@@ -50,7 +52,7 @@ public class MagicCreature {
             System.out.println("Бесполезно пугать уже максимально агрессивного зверя. Вам бы ноги от сюда унести поскорее!");
             return;
         }
-        System.out.println("Вы напугали " + this.name);
+        System.out.println("Вы напугали существо \"" + this.name + "\"");
         changeMood(-15);
     }
 
@@ -60,15 +62,15 @@ public class MagicCreature {
 
         if (this.health > 100) {
             this.health = 100;
-            System.out.println("У " + this.name + " здоровье на максимуме");
+            System.out.println("У существа \"" + this.name + "\" здоровье на максимуме");
         }
 
         if (this.health >= 5 && this.health <= 15)
-            System.out.println("Здоровье меньше 15, есть риск потерять " + this.name);
+            System.out.println("Здоровье меньше 15, есть риск потерять существо \"" + this.name + "\"");
 
         if (this.health < 0) {
             this.health = 0;
-            System.out.println("Здоровье " + this.name + " подошло к 0..");
+            System.out.println("Здоровье существа \"" + this.name + "\" подошло к 0..");
         }
     }
 
@@ -78,19 +80,19 @@ public class MagicCreature {
 
         if (this.mood > 100) {
             this.mood = 100;
-            System.out.println(this.name + " в наилучшем настроении");
+            System.out.println("\"" + this.name + "\" в наилучшем настроении");
         }
 
         if (this.mood < 0) {
             this.mood = 0;
-            System.out.println(this.name + " в наихудшем настроении");
+            System.out.println("\"" + this.name + "\" в наихудшем настроении");
         }
     }
 
     // выводит информацию о существе: имя, здоровье, настроение,
     //  текущее состояние («Счастливое» / «Грустное» / «Злое»).
     void printStatus() {
-        System.out.println("\nСущество: " + this.name
+        System.out.println("\nСущество: \"" + this.name + "\""
                 + "\nЗдоровье: " + this.health
                 + "\nНастроение: " + this.mood
                 + "\nСостояние: " + getMoodDescription() + "\n");
@@ -98,7 +100,7 @@ public class MagicCreature {
 
     // возвращает описание состояния существа на основе настроения:
     //  больше 70 — счастливое, меньше 30 — злое, от 30 до 70 — грустное.
-    String getMoodDescription() {
+    private String getMoodDescription() {
         if (mood > 70) return "Счастливое";
         else if (mood < 30) return "Злое";
         else return "Грустное";
