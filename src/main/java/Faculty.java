@@ -38,7 +38,7 @@ public class Faculty {
         return this.points > other.points;
     }
 
-    static void leader(Faculty faculty1, Faculty faculty2) {
+    static void printLeader(Faculty faculty1, Faculty faculty2) {
         if (faculty1.isLeader(faculty2) == faculty2.isLeader(faculty1)) {
             System.out.println("Ничья!");
         } else {

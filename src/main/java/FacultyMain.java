@@ -19,7 +19,7 @@ public class FacultyMain {
         griffindor.printInfo();
         slizerin.printInfo();
 
-        Faculty.leader(griffindor, slizerin);
+        Faculty.printLeader(griffindor, slizerin);
 
         // тестируем дальше
         System.out.println();
@@ -29,7 +29,7 @@ public class FacultyMain {
 
         griffindor.printInfo();
         slizerin.printInfo();
-        Faculty.leader(slizerin, griffindor);
+        Faculty.printLeader(slizerin, griffindor);
 
 
         // тест 3 (ничья)
@@ -39,6 +39,6 @@ public class FacultyMain {
 
         griffindor.printInfo();
         slizerin.printInfo();
-        Faculty.leader(slizerin, griffindor);
+        Faculty.printLeader(slizerin, griffindor);
     }
 }
