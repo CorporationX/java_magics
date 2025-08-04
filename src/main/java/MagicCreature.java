@@ -19,7 +19,9 @@ public class MagicCreature {
 
     public void setHealth(int health) {
         if (health < 0 || health > 100) {
-            System.out.println("Здоровье существа должно быть в диапазоне от 0 до 100");
+            System.out.println("Здоровье существа должно быть в диапазоне от 0 до 100. "
+                    + "По умолчанию будет 70");
+            this.health = 70;
             return;
         }
         this.health = health;
@@ -27,7 +29,9 @@ public class MagicCreature {
 
     public void setMood(int mood) {
         if (mood < 0 || mood > 100) {
-            System.out.println("Настроение существа должно быть в диапазоне от 0 до 100");
+            System.out.println("Настроение существа должно быть в диапазоне от 0 до 100. "
+                    + "По умолчанию будет 60");
+            this.mood = 60;
             return;
         }
         this.mood = mood;
@@ -137,4 +141,5 @@ public class MagicCreature {
             return false;
         } else return true;
     }
+
 }
