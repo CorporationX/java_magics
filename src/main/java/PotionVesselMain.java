@@ -12,7 +12,7 @@ public class PotionVesselMain {
 
         PotionVessel[] potionVessels = {polyjuicePotion, babblingBeveragePotion, sugarWatter};
 
-        for ( PotionVessel vessel : potionVessels) {
+        for (PotionVessel vessel : potionVessels) {
             System.out.println("Сосуд: " + vessel.potionName);
             System.out.println("Объем: " + vessel.volume);
             System.out.println("Магическое: " + vessel.isMagical);
