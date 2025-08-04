@@ -132,7 +132,7 @@ public class MagicCreature {
     }
 
     private boolean isValidName(String name) {
-        if (this.name == null || this.name.equals("")) {
+        if (this.name == null || this.name.isEmpty()) {
             System.out.println("Имя не может быть пустым. Задай имя через setName(name)");
             return false;
         } else return true;
