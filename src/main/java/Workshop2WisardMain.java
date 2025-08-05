@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Workshop2WisardMain {
 
     public static void main(String[] args) {
@@ -22,25 +20,14 @@ public class Workshop2WisardMain {
 
         // если урон не задан, то значения по умолчанию у Гарри 35, у Волдеморта 100
 //        harry.setDamage(55);
+//        voldemort.setDamage(45);
 
-        Random random = new Random();
+        Workshop2Wizard.toFight(harry, voldemort);
 
-        while (true) {
-            boolean isHarryTurn = random.nextBoolean();
-            if (isHarryTurn) {
-                harry.hit(voldemort);
-                if (voldemort.getHealth() <= 0) {
-                    System.out.println(harry.getName() + " победил.");
-                    break;
-                } else
-                    System.out.println(voldemort.getName() + " ранен. Его здоровье: " + voldemort.getHealth());
-            } else {
-                voldemort.hit(harry);
-                if (harry.getHealth() <= 0) {
-                    System.out.println(voldemort.getName() + " победил.");
-                    break;
-                } else System.out.println(harry.getName() + " ранен. Его здоровье: " + harry.getHealth());
-            }
-        }
+        // перенес всю логику в другой класс, теперь сражаться могут любые участники
+        Workshop2Wizard ron = new Workshop2Wizard("Рон", 20);
+        Workshop2Wizard germiona = new Workshop2Wizard("Гермиона", 50);
+
+        Workshop2Wizard.toFight(ron, germiona);
     }
 }

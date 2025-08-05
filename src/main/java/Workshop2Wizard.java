@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Workshop2Wizard {
 
     private String name; // Имя
@@ -42,7 +44,7 @@ public class Workshop2Wizard {
         this.health = health;
     }
 
-    public void hit(Workshop2Wizard wizard) {
+    private void hit(Workshop2Wizard wizard) {
         wizard.setHealth(wizard.getHealth() - damage);
     }
 
@@ -53,4 +55,26 @@ public class Workshop2Wizard {
 //        if (this.name.equals("Волан-де-Морт")) this.damage = 100; // если нужны постоянные величины урона Гарри и Волдеморта
     }
 
+    public static void toFight(Workshop2Wizard wizard1, Workshop2Wizard wizard2) {
+        Random random = new Random();
+        System.out.println("Битва: \"" + wizard1.getName() + "\" против \"" + wizard2.getName() + "\" начинается! \n");
+        while (true) {
+            boolean isHarryTurn = random.nextBoolean();
+            if (isHarryTurn) {
+                wizard1.hit(wizard2);
+                if (wizard2.getHealth() <= 0) {
+                    System.out.println("Участник \"" + wizard1.getName() + "\" победил.");
+                    break;
+                } else
+                    System.out.println("Участник \"" + wizard2.getName() + "\" ранен. Его здоровье: " + wizard2.getHealth());
+            } else {
+                wizard2.hit(wizard1);
+                if (wizard1.getHealth() <= 0) {
+                    System.out.println("Участник \"" + wizard2.getName() + "\" победил.");
+                    break;
+                } else System.out.println("Участник \"" + wizard1.getName() + "\" ранен. Его здоровье: " + wizard1.getHealth());
+            }
+        }
+        System.out.println();
+    }
 }
