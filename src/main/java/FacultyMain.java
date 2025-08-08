@@ -12,9 +12,9 @@ public class FacultyMain {
         griffindor.printInfo();
         slizerin.printInfo();
 
-        String leader = griffindor.name;
-        if (!griffindor.isLeader(slizerin)) {
-            leader = slizerin.name;
+        String leader = slizerin.name;
+        if (griffindor.isLeader(slizerin)) {
+            leader = griffindor.name;
         }
         System.out.println("Лидирует: " + leader);
 
