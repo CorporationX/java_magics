@@ -5,16 +5,17 @@ import java.util.Random;
 public class MagicalNumberTransformation {
     public static void main(String[] args) {
 
-        String numberString = "";
+        StringBuilder builder = new StringBuilder();
         Random rand = new Random();
 
         for (int i = 0; i < 5; i++) {
-            numberString += " " + rand.nextInt(-5000000, 5000001);
+            builder.append(rand.nextInt(10));
         }
-        String result = numberString.substring(1);
-        print(result);
 
-        String replace_i = result.replace("1", "i");
+        String numberString = builder.toString();
+        print(numberString);
+
+        String replace_i = numberString.replace("1", "i");
         print(replace_i);
 
         String withoutMinus = replace_i.replace("-", "");
