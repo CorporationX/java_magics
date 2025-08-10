@@ -1,11 +1,11 @@
 public class PotionVesselMain {
     public static void main(String[] args) {
-        HogwartsStudent hermione = new HogwartsStudent("Гермиона", 17, wandHermione);
         Wand wandHermione = new Wand(27, "Сердцевина дракона", "Виноградная лоза");
+        HogwartsStudent hermione = new HogwartsStudent("Гермиона", 17, wandHermione);
         PotionVessel potion1 = new PotionVessel("Оборотное зелье", 150.0, true, hermione);
 
-        HogwartsStudent ron = new HogwartsStudent("Рон", 17, wandRon);
         Wand wandRon = new Wand(35, "Волос единорога", "Ясень");
+        HogwartsStudent ron = new HogwartsStudent("Рон", 17, wandRon);
         PotionVessel potion2 = new PotionVessel(50.0, ron);
 
         printPotionInfo(potion1);
