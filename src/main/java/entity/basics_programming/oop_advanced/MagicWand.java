@@ -2,7 +2,7 @@ package entity.basics_programming.oop_advanced;
 
 public class MagicWand {
     private String owner; // имя владельца палочки
-    static int totalWandsSold = 0; // общее количество проданных палочек
+    private static int totalWandsSold = 0; // общее количество проданных палочек
 
     public MagicWand(String owner) {
         this.owner = owner;
