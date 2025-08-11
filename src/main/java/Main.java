@@ -9,25 +9,23 @@ public class Main {
          * закончится чьей-то смертью.
          **/
 
-        // TODO 1. избавиться от чисел в методе hit
-        // TODO 2. найти и исправить как минимум 1 нюанс в коде
-        Wizard harry = new Wizard("Гарри Поттер");
-        Wizard voldemort = new Wizard("Волан-де-Морт");
+        Wizard harry = new Wizard("Гарри Поттер", 35);
+        Wizard voldemort = new Wizard("Волан-де-Морт", 100);
 
         Random random = new Random();
 
         while (true) {
             boolean isHarryTurn = random.nextBoolean();
             if (isHarryTurn) {
-                harry.hit(voldemort, 35);
-                System.out.println("Волан-де-Морт ранен. Его здоровье: " + voldemort.getHealth());
+                harry.hit(voldemort);
+                System.out.println(voldemort.getName() + " ранен. Его здоровье: " + voldemort.getHealth());
                 if (voldemort.getHealth() < 0) {
-                    System.out.println("Гарри победил.");
+                    System.out.println(harry.getName() + " победил.");
                     break;
                 }
             } else {
-                voldemort.hit(harry, 100);
-                System.out.println("Волан-де-Морт победил.");
+                voldemort.hit(harry);
+                System.out.println(voldemort.getName() + " победил.");
                 break;
             }
         }

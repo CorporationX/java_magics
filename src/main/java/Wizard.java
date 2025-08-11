@@ -1,10 +1,12 @@
 public class Wizard {
     private String name; // Имя
     private int health; // Здоровье
+    private int damage;
 
-    public Wizard(String name) {
+    public Wizard(String name, int damage) {
         this.name = name;
         this.health = 100;
+        this.damage = damage;
     }
 
     public String getName() {
@@ -23,7 +25,7 @@ public class Wizard {
         this.health = health;
     }
 
-    public void hit(Wizard wizard, int health) {
-        wizard.setHealth(wizard.getHealth() - health);
+    public void hit(Wizard wizard) {
+        wizard.setHealth(wizard.getHealth() - damage);
     }
 }
