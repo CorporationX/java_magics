@@ -20,7 +20,7 @@ public class MagicCreature {
     }
 
     // Сеттеры с проверкой диапазона
-    private void setMood(int mood) {
+    public void setMood(int mood) {
         if (mood > 100) {
             this.mood = 100;
         } else if (mood < 0) {
@@ -30,7 +30,7 @@ public class MagicCreature {
         }
     }
 
-    private void setHealth(int health) {
+    public void setHealth(int health) {
         if (health > 100) {
             this.health = 100;
         } else if (health < 0) {
@@ -58,7 +58,7 @@ public class MagicCreature {
         System.out.println("Состояние: " + getMoodDescription());
     }
 
-    public String getMoodDescription() {
+    private String getMoodDescription() {
         if (mood > 70) {
             return "Счастливое";
         } else if (mood < 30) {
