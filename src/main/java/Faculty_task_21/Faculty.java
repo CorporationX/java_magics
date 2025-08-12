@@ -1,4 +1,4 @@
-package Faculty_task_21;
+package faculty_task_21;
 public class Faculty {
     String name;
     int points;
