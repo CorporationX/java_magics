@@ -4,7 +4,7 @@ public class MagicBook {
     private String title; // название книги
     private boolean isOpen = false; // открыта ли сейчас книга
 
-    public void setOpen(boolean open) {
+    private void setOpen(boolean open) {
         isOpen = open;
     }
 

@@ -5,7 +5,7 @@ public class MagicBookMain {
         MagicBook magicHistory = new MagicBook("История магии");
         MagicBook bookOfSpells = new WhisperingBook("Книга заклинаний");
         DangerousBook monsterBooksAboutMonsters = new DangerousBook("Монстр книги о монстрах");
-        MagicBook monsterBooksAboutMonsters2 = new DangerousBook("Монстр книги о монстрах2", false);
+        DangerousBook monsterBooksAboutMonsters2 = new DangerousBook("Монстр книги о монстрах2", false);
 
         magicHistory.close();
 
@@ -18,11 +18,12 @@ public class MagicBookMain {
         bookOfSpells.close();
 
         monsterBooksAboutMonsters.open();
-        monsterBooksAboutMonsters2.close();
-        // почему в классе родителе при вызове метода close() теряется значение переменной isOpen?
-        // в дебаге только понял, что она до вызова метода close() есть, а при его вызове как-будто
-        // снова становится по умелчанию в false. Как к ней можно обратиться и зафиксировать ее?
+        monsterBooksAboutMonsters.close();
 
+        // тесты
+        monsterBooksAboutMonsters2.open();
+        monsterBooksAboutMonsters2.close();
+        monsterBooksAboutMonsters2.setHasPermission(true);
         monsterBooksAboutMonsters2.open();
         monsterBooksAboutMonsters2.close();
     }

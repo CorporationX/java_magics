@@ -22,11 +22,11 @@ public class DangerousBook extends MagicBook {
 
     @Override
     public void open() {
-        if (hasPermission == false) {
+        if (hasPermission) {
+            super.open();
+        } else {
             System.out.println("\nШшшш! Не трогайте меня!\n"
                     + "Вы не можете прочитать книгу \"" + getTitle() + "\"");
-        } else {
-            super.open();
         }
     }
 }
