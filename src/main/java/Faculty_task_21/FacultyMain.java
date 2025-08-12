@@ -1,3 +1,4 @@
+package Faculty_task_21;
 public class FacultyMain {
     public static void main(String[] args) {
         
