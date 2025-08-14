@@ -9,9 +9,8 @@ public class QuidditchCompetition {
 
         // Условия к допуску
         boolean canPlay = age > 11 && hasBroom && passedMedicalCheck && trainingSessionsAttended > 3;
-        if
 
         // Вывод
-        System.out.println(canPlay);
+        System.out.println("Гарри может играть!");
     }
 }
