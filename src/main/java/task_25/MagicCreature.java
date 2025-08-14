@@ -51,9 +51,9 @@ public class MagicCreature {
 
     private void changeHealth(int delta) {
         this.health+= delta;
-        if (this.health < 0 ) {
-            System.out.println("Здоровье не может стать отрицательным. Установлено: 0");
-            this.health = 0;
+        if (this.health < 1 ) {
+            System.out.println("Здоровье не может быть равно или меньше нуля. Установлено: 1");
+            this.health = 1;
         } else if (this.health > 100) {
             System.out.println("Здоровье не может быть больше 100. Установлено: 100");
             this.health = 100;
