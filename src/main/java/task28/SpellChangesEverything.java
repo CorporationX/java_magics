@@ -13,8 +13,8 @@ public class SpellChangesEverything {
 
         StringBuilder builderSpell = new StringBuilder(halfLowerSpell);
         builderSpell.reverse();
-        builderSpell.replace(0,1, "!");
-        builderSpell.replace(1,2, " ");
+
+        builderSpell.replace(0,2, "! ");
 
         System.out.println("Итоговая строка: " + builderSpell.toString());
     }
