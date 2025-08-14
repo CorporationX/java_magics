@@ -14,6 +14,7 @@ public class MagicTransportMain {
             magicTransport.move();
             magicTransport.printInfo();
             System.out.println();
+
         }
     }
 }
