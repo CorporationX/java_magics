@@ -9,7 +9,7 @@ public class Hippogriff extends MagicTransport implements Flyable {
     @Override
     void move() {
         fly();
-        System.out.println("Гиппогриф взлетает со скоростью " + speed);
+        System.out.println("Гиппогриф взлетает со скоростью " + getSpeed());
     }
 
     @Override

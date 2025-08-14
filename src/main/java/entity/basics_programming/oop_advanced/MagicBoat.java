@@ -8,6 +8,6 @@ public class MagicBoat extends MagicTransport{
 
     @Override
     void move() {
-        System.out.println("Лодка плывёт со скоростью " + speed);
+        System.out.println("Лодка плывёт со скоростью " + getSpeed());
     }
 }

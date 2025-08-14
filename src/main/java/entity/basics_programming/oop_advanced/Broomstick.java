@@ -9,7 +9,7 @@ public class Broomstick extends MagicTransport implements Flyable {
     @Override
     void move() {
         fly();
-        System.out.println("Метла летит со скоростью " + speed);
+        System.out.println("Метла летит со скоростью " + getSpeed());
     }
 
     @Override
