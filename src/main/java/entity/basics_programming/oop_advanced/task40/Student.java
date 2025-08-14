@@ -8,6 +8,14 @@ public class Student extends Wizard {
 
     @Override
     void castSpell(String spell) {
-        System.out.println(name + " использует " + spell);
+        if (isCheckingOfSpell(spell)) {
+            System.out.println(name + " использует " + spell);
+        } else {
+            System.out.println("Это запрещённое заклинание! Дуэль прекращается!");
+        }
+    }
+
+    public boolean isCheckingOfSpell(String spell) {
+        return !spell.equals("Avada Kedavra");  // Упростила IDEA, возьму на заметку.
     }
 }

@@ -14,15 +14,12 @@ class MagicDuels {
             int currentSpell = rand.nextInt(spell.length);
             int currentWizard = rand.nextInt(duelists.length);
 
+            duelists[currentWizard].castSpell(spell[currentSpell]);
+
             if (duelists[currentWizard] instanceof Student) {
-                if (spell[currentSpell].equals("Avada Kedavra")) {
-                    System.out.println("Это запрещённое заклинание! Дуэль прекращается!");
+                if (!((Student) duelists[currentWizard]).isCheckingOfSpell(spell[currentSpell])) {
                     break;
-                } else {
-                    duelists[currentWizard].castSpell(spell[currentSpell]);
                 }
-            } else {
-                duelists[currentWizard].castSpell(spell[currentSpell]);
             }
             i++;
         }
