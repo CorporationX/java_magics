@@ -1,6 +1,6 @@
 public class MagicCreature2 {
-    String name;
-    int power;
+    private final String name;
+    private final int power;
     static int count = 0;
     static int maxPower = 0;
 
