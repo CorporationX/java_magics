@@ -1,4 +1,4 @@
-package entity.basics_programming.oop_advanced;
+package entity.basics_programming.oop_advanced.task37;
 
 abstract class MagicTransport {
     private String name; //название транспорта

@@ -1,6 +1,6 @@
-package entity.basics_programming.oop_advanced;
+package entity.basics_programming.oop_advanced.task37;
 
-public class MagicBoat extends MagicTransport{
+public class MagicBoat extends MagicTransport {
 
     public MagicBoat() {
         super("Лодка Хагрида", 20);

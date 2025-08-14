@@ -1,4 +1,4 @@
-package entity.basics_programming.oop_advanced;
+package entity.basics_programming.oop_advanced.task37;
 
 public class Broomstick extends MagicTransport implements Flyable {
 
