@@ -2,7 +2,11 @@ package entity.basics_programming.oop_advanced;
 
 abstract class MagicTransport {
     private String name; //название транспорта
-    int speed; // скорость перемещения
+    private int speed; // скорость перемещения
+
+    public int getSpeed() {
+        return speed;
+    }
 
     abstract void move(); // описывает перемещение транспорта
 
