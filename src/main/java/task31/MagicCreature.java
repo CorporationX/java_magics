@@ -13,14 +13,16 @@ public class MagicCreature {
         if (name.isBlank() ) {
             // не используем проверку на name.isEmpty(), т.к.
             // name.isEmpty() является подмножеством name.isBlank()
-            System.out.println("Задайте корректное имя (не пустое и не состоящее только из пробельных символов)");
-            return;
-            // Вопрос: можно ли таким образом прервать действие конструктора, если введены некорректные данные?
+            System.out.println("Вы ввели некорретное имя. Присвоено имя \"Безымянный\" ");
+            this.name = "Безымянный";
         } else {
             this.name = name;
-            count++;
         }
+        count++;
+        // count++ Вынесено из блока if, потому что объект в любом случае создаться
+        // независимо от имени (корретное/некорректное)
 
+        // Дефолтное значение силы = 0, учитывается в условии (power <1)
         if (power <1 ) {
             String message = String.format("Сила должна быть положительным числом. " +
                     "Для существа %s установлена сила: 1 \n", this.name);
@@ -42,6 +44,4 @@ public class MagicCreature {
         System.out.println("Максимальная сила: " + MagicCreature.maxPower);
         System.out.println("Обладатель максимальной силы: " + MagicCreature.maxPowerName);
     }
-
-
 }
