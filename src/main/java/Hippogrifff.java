@@ -1,4 +1,4 @@
-public class Hippogriff extends MagicalCreature {
+public class Hippogrifff extends MagicalCreature {
     @Override
     public void interact() {
         System.out.println("Гиппогрифф грациозно кланяется.");

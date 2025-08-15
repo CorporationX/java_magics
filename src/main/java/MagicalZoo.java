@@ -1,7 +1,7 @@
 public class MagicalZoo {
     public static void main(String[] args) {
         MagicalCreature[] creatures = {
-                new Hippogriff(),
+                new Hippogrifff(),
                 new Troll(),
                 new Patronus()
         };
