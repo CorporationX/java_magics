@@ -14,9 +14,9 @@ public class FacultyMain {
         slytherin.printInfo();
 
         if (gryffindor.isLeader(slytherin)) {
-            System.out.println("Лидирует: " + gryffindor.Name());
+            System.out.println("Лидирует: " + gryffindor.name);
         } else if (slytherin.isLeader(gryffindor)) {
-            System.out.println("Лидирует: " + slytherin.Name());
+            System.out.println("Лидирует: " + slytherin.name);
         } else {
             System.out.println("Ничья между факультетами.");
         }

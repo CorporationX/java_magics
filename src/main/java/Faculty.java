@@ -35,8 +35,4 @@ public class Faculty {
         return this.points > other.points;
     }
 
-    //Эту часть мне прописала сама IJ
-    public String Name() {
-    return name;
-    }
 }
