@@ -19,11 +19,11 @@ public class RemembrallTestMain {
             try {
                 RemembrallTest.testRemembrall(wizardName, forgetfulnessLevel);
             } catch (NullPointerException e) {
-                System.out.println(e.getMessage());
+                System.out.println(e.getMessage() + "\n");
             } catch (RemembrallOverloadException e) {
-                System.out.println(e.getMessage());
+                System.out.println(e.getMessage() + "\n");
             } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+                System.out.println(e.getMessage() + "\n");
             }
         }
     }
