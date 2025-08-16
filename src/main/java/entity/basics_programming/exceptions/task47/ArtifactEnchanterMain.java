@@ -3,7 +3,7 @@ package entity.basics_programming.exceptions.task47;
 import static entity.basics_programming.exceptions.task47.ArtifactEnchanter.applyEnchantment;
 
 public class ArtifactEnchanterMain {
-    public static void main(String[] args) throws EnchantmentRejectedException, MagicEnergySourceEmptyException, RuneCrackedException {
+    public static void main(String[] args) {
         // В методах реализовал вероятности изготовления артефакта с уменьшением вероятности к последнему вызову
         // прогнал 10 попыток через массив для наглядности
         // изменил вызов applyEnchantment(boolean artifactReceptive),
