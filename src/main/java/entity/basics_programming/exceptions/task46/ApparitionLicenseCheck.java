@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class ApparitionLicenseCheck {
     public static void checkApparitionReadiness(LocalDate licenseExpiryDate, int concentrationLevel)
             throws ApparitionLicenseExpiredException, InsufficientConcentrationException {
-        System.out.println("Проверяем данные для трансгресс: \nЛицензия (до): " + licenseExpiryDate + ", уровень концентрации: " + concentrationLevel);
+        System.out.println("Проверяем данные для трансгрессии: \nЛицензия до: " + licenseExpiryDate + ", уровень концентрации: " + concentrationLevel);
         LocalDate currentDate = LocalDate.now();
         if (licenseExpiryDate == null){
             throw new NullPointerException("Дата окончания лицензии не указана!");
