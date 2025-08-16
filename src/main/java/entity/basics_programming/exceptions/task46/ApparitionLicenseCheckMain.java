@@ -6,14 +6,16 @@ import java.util.Random;
 import static entity.basics_programming.exceptions.task46.ApparitionLicenseCheck.checkApparitionReadiness;
 
 public class ApparitionLicenseCheckMain {
-    public static void main(String[] args) throws ApparitionLicenseExpiredException, InsufficientConcentrationException {
+    public static void main(String[] args) {
         LocalDate[] dates = {
                 LocalDate.of(2020, 12, 3),
                 LocalDate.of(2026, 10, 23),
                 LocalDate.now(),
+                null,
                 LocalDate.of(2025, 8, 17),
                 LocalDate.of(2022, 3, 15),
-                LocalDate.of(2028, 12, 12)
+                LocalDate.of(2028, 12, 12),
+                null
         };
         int[] concentrationLevels = {12, 45, 70, 55, 1, 100, 60};
 
@@ -26,7 +28,7 @@ public class ApparitionLicenseCheckMain {
             concentrationLevel = concentrationLevels[index.nextInt(concentrationLevels.length)];
             try {
                 checkApparitionReadiness(currentDate, concentrationLevel);
-            } catch (ApparitionLicenseExpiredException | InsufficientConcentrationException e) {
+            } catch (ApparitionLicenseExpiredException | InsufficientConcentrationException | NullPointerException e) {
                 System.out.println(e.getMessage());
             } finally {
                 System.out.println("Проверяем дальше\n");
