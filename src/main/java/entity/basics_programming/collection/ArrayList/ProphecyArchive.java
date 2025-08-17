@@ -1,10 +1,10 @@
 package entity.basics_programming.collection.ArrayList;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ProphecyArchive {
     public static void main(String[] args) {
-        ArrayList<String> prophecies = new ArrayList<>();
+        List<String> prophecies = new ArrayList<>();
         prophecies.add("Пророчество о Падении Темного Лорда (Трелони)");
         prophecies.add("Пророчество о Чемпионе Хогвартса (Неизвестно)");
         prophecies.add("Пророчество о Втором Пришествии (Забыто)");
