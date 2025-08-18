@@ -1,8 +1,8 @@
 package OOP.AdvancedRemote;
 
 public class Professor extends Wizard {
-    public Professor() {
-        super("Профессор МакГонагалл");
+    public Professor(String name) {
+        super(name);
     }
 
     @Override

@@ -5,9 +5,9 @@ import java.util.Random;
 public class MagicDuelsPolymorphism {
     public static void main(String[] args) {
         Wizard[] duelists = {
-                new Student(),
-                new Professor(),
-                new DarkWizard()
+                new Student("Гарри Поттер"),
+                new Professor("Макгонагалл"),
+                new DarkWizard("Волан-де-Морт")
         };
         String[] spells = {"Expelliarmus", "Lumos", "Авада Кедавра"};
 

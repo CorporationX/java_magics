@@ -3,8 +3,8 @@ package OOP.AdvancedRemote;
 import java.util.Objects;
 
 public class Student extends Wizard {
-    public Student() {
-        super("Гарри Поттер");
+    public Student(String name) {
+        super(name);
     }
 
     @Override
