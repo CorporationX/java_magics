@@ -13,10 +13,8 @@ public class HogwartsWatcher {
             case ("Тайная Комната") -> logger.warning("Подозрительная активность! " + activity);
             // если activity содержит слово "заклинание" логировать как WARNING. В остальных случаях — как INFO.
             case ("Гостиная Гриффиндора") -> {
-                if (activity.contains("заклинание"))
-                    logger.warning("Подозрительная активность. " + activity);
-                else
-                    logger.info("Обычная активность. " + activity);
+                if (activity.contains("заклинание")) logger.warning("Подозрительная активность. " + activity);
+                else logger.info("Обычная активность. " + activity);
             }
             // логировать только SEVERE ошибки, если activity содержит "Волан-де-Морт".
             // В остальных случаях логировать ничего не нужно.
