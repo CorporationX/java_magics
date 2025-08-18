@@ -22,5 +22,4 @@ public class ProphecyArchive {
             System.out.println(prophecyUpdate);
         }
     }
-
 }
