@@ -20,6 +20,7 @@ public class DangerousBook  extends MagicBook{
         }
 
 
+
     }
 
 }
