@@ -21,4 +21,9 @@ public class UniqueCharacterFinder {
         }
         return firstUnicSymbol;
     }
+
+    public static void print(String text){
+        Character firstUnique = findFirstUniqueChar(text);
+        System.out.println("Первый уникальный символ: " + firstUnique);
+    }
 }
