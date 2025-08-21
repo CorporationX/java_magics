@@ -7,14 +7,6 @@ public class Spell {
     private String name; // название
     private String incantation; // заклинани
 
-    public String getName() {
-        return name;
-    }
-
-    public String getIncantation() {
-        return incantation;
-    }
-
     public Spell(String name, String incantation) {
         this.name = name;
         this.incantation = incantation;
@@ -32,5 +24,10 @@ public class Spell {
     @Override
     public int hashCode() {
         return Objects.hash(name, incantation);
+    }
+
+    @Override
+    public String toString() {
+        return "Spell(\"" + name + '\"' + ',' + ' ' + '\"' + incantation + '\"' + ')';
     }
 }

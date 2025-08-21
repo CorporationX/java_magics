@@ -28,7 +28,7 @@ public class TomRiddleDiary {
 
         System.out.println("\nТекущий список заклинаний:");
         for (Spell spell : tomRiddleDiary) {
-            System.out.println("\"" + spell.getName() + "\" - \"" + spell.getIncantation() + "\"");
+            System.out.println(spell.toString());
         }
 
         // Удалите одно из заклинаний (например, new Spell("Оживить", "Репаро")).
@@ -38,13 +38,7 @@ public class TomRiddleDiary {
         // Выведите итоговый список уникальных заклинаний на экран.
         System.out.println("\nИтоговый список уникальных значений: ");
         for (Spell spell : tomRiddleDiary) {
-            System.out.println("\"" + spell.getName() + "\" - \"" + spell.getIncantation() + "\"");
+            System.out.println(spell.toString());
         }
-
-        // пробовал создать метод print() - не получилось, при выводе передает:
-        // entity.basics_programming.collection.HashSet.Spell@e0a3c94b,
-        // entity.basics_programming.collection.HashSet.Spell@a1dc0b85]
-        // а как их преобразовать в нормальный читаемый текст - не нашел..
-
     }
 }
