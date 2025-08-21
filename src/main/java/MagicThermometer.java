@@ -16,7 +16,7 @@ public class MagicThermometer {
     }
     // 3. Уменьшаем температуру.
     public void decrease(int value) {
-        if (temperature <0) {
+        if (temperature < 0) {
             System.out.println("Ошибка! Зелье не может быть снижено до отрицательного значения!");
             return;
         }
