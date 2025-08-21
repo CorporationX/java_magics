@@ -37,15 +37,18 @@ public class PathToPhilosophersStone {
             // Создаем путь к Философскому камню
             way.add(rooms.get(index));
 
+            // текущая комната
+            String currentRoom = rooms.get(index);
+
             // нашли философский камень (выход из цикла)
-            if (rooms.get(index) == "Философский Камень") break;
+            if (currentRoom.equals("Философский Камень")) break;
 
             // обнуляем индекс, чтобы запустить цикл с начала
             if (index == rooms.size()) index = 0;
             System.out.println("Пришли в комнату \"" + rooms.get(index) + "\"");
 
             // Ловушка, перемешиваем список комнат
-            if (rooms.get(index) == "Ловушка") {
+            if (currentRoom.equals("Ловушка")) {
                 Collections.shuffle(rooms);
                 System.out.println("Попали в ловушку! Возвращаемся в начало..."
                         + "\nКомнаты подземелья перемешаны: " + rooms);
