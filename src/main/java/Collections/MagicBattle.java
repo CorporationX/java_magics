@@ -8,7 +8,8 @@ public class MagicBattle {
         Map<String, String> wizards = new HashMap<>();
         wizards.put("Harry", "Экспеллиармус");
         wizards.put("Ron", "Тоталус");
-        if (wizards.containsValue("Neville")) {
+
+        if (wizards.containsKey("Neville")) {
             System.out.println("Заклинание Невилла: " + wizards.get("Neville"));
         } else {
             wizards.put("Neville", "Ступефи");
