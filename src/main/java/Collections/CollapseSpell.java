@@ -16,12 +16,14 @@ public class CollapseSpell {
         Random random = new Random();
         int iterations = 0;
 
+        int newNumber = random.nextInt(16);
+        boolean check = random.nextBoolean();
+
         System.out.println("Начальный список: " + numbers);
 
         while (numbers.size() > 1) {
             iterations++;
-            int newNumber = random.nextInt(16);
-            boolean check = random.nextBoolean();
+
 
             System.out.println("\nИтерация " + iterations + ":");
             System.out.println("Новое число: " + newNumber);
