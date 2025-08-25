@@ -1,18 +1,19 @@
-public class LibraryAccessChecker {    // Создаем приватный метод для проверки
+public class LibraryAccessChecker {
+    // Создаем приватный метод для проверки
     private boolean hasPermissionSlip(String studentName) {
         boolean hasSlip = studentName.equals("Гермиона Грейнджер");
         if (hasSlip) {
-            System.out.println("Проверка..." + studentName + " есть разрешение!");
+            System.out.println("Проверка... у " + studentName + " есть разрешение!");
         } else {
-            System.out.println("Проверка... " + studentName + " нет разрешения! Вход запрещен!");
+            System.out.println("Проверка... у " + studentName + " нет разрешения!");
         }
         return hasSlip;
     }
 
     // Публичный метод для проверки
     public boolean checkLibraryAccess(String studentName, int year) {
-        System.out.println("Проверяем студента: " + studentName + "Курс:" + year);
-        if (year >= 4); {
+        System.out.println("Проверяем студента: " + studentName + ", Курс:" + year);
+        if (year >= 4) {
             System.out.println("Доступ разрешен по курсу.");
             return true;
         }
