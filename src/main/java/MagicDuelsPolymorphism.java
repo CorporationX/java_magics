@@ -16,9 +16,9 @@ public class MagicDuelsPolymorphism {
 
          int rounds = 2;
         for (int r = 0; r < rounds; r++) {
-            for (Wizard w : duelists) {
+            for (Wizard wizard : duelists) {
                 String spell = spells[rand.nextInt(spells.length)];
-                boolean continueDuel = w.castSpell(spell);
+                boolean continueDuel = wizard.castSpell(spell);
                 if (!continueDuel) {
                     // дуэль немедленно прекращается
                     return;
