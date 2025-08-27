@@ -6,9 +6,9 @@ public class MagicTransportMain {
                 new MagicBoat("Лодка Хагрида", 20)
         };
 
-        for (MagicTransport t : transports) {
-            t.move();
-            t.printInfo();
+        for (MagicTransport transport : transports) {
+            transport.move();
+            transport.printInfo();
             System.out.println();
         }
     }
