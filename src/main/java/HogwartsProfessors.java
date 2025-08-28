@@ -1,3 +1,4 @@
+/*
 public class HogwartsProfessors {
     public static void main(String[] args) {
         // Создаём массив преподавателей
@@ -16,3 +17,4 @@ public class HogwartsProfessors {
     }
 }
 
+*/

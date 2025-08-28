@@ -1,3 +1,4 @@
+/*
 class PotionVessel {
     String potionName;
     double volume;
@@ -16,4 +17,4 @@ class PotionVessel {
         this.inMagical = false;
         this.creator = creator;
     }
-}
+}*/
