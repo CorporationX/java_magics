@@ -1,3 +1,4 @@
+/*
 public class PotionVesselMain {
     public static void main(String[] args) {
         HogwartsStudent hermione = new HogwartsStudent("Гермиона");
@@ -9,3 +10,4 @@ public class PotionVesselMain {
         System.out.println("Сосуд: " + dracoVessel.potionName + "\nОбъём: " + dracoVessel.volume +" мл" + "\nМагическое: " + dracoVessel.inMagical +"\nПринадлежит: " + draco.name);
     }
 }
+*/

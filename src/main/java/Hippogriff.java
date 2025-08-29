@@ -1,11 +1,16 @@
-class Hippogriff extends MagicalCreature {
-    @Override
-    public void interact() {
-        System.out.println("Гиппогриф кланяется в знак уважения.");
-     }
+class Hippogriff extends MagicTransport implements Flyable {
+    public Hippogriff(String name, int speed) {
+        super(name, speed);
+    }
 
     @Override
-    public void interact(Muggle muggle) {
-        System.out.println("Гиппогриф смотрит с подозрением.");
+    public void fly() {
+        System.out.println("Гиппогриф машет крыльями!");
+    }
+
+    @Override
+    public void move() {
+        fly();
+        System.out.println("Гиппогриф взлетает со скоростью " + speed);
     }
 }

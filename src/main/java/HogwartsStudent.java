@@ -1,4 +1,4 @@
-class HogwartsStudent {
+/*class HogwartsStudent {
     String name;
     int age;
     Wand wand;
@@ -14,4 +14,4 @@ class HogwartsStudent {
         this.age = age;
         this.wand = null;
     }
-}
+}*/
