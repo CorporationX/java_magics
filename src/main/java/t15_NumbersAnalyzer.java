@@ -1,5 +1,6 @@
 public class t15_NumbersAnalyzer {
     public static void main(String[] args) {
+        //🔮15. Анализ чисел от минимума до максимума*
         int[] numbers = {10, 5, 8, 20, 1};
         int min = numbers[0];
         int max = numbers[0];
