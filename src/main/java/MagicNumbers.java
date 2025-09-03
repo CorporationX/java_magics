@@ -20,14 +20,11 @@ public class MagicNumbers {
         // Проверка условий
       if (number1 % 2 == 0 && number2 % 2 == 0) {
           System.out.println(number1 / 2 + number2 / 2);
-        }
-      if (number1 % 2 == 0 && number2 % 2 != 0) {
+        } else if (number1 % 2 == 0 && number2 % 2 != 0) {
           System.out.println(number1 / 2 + number2);
-        }
-      if (number1 % 2 != 0 && number2 % 2 == 0) {
+        } else if (number1 % 2 != 0 && number2 % 2 == 0) {
           System.out.println(number1 + number2 / 2);
-        }
-      if (number1 % 2 != 0 && number2 % 2 != 0) {
+        } else if (number1 % 2 != 0 && number2 % 2 != 0); {
           System.out.println(number1 + number2);
         }
     }
