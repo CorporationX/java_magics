@@ -11,6 +11,11 @@ public class QuidditchCompetition {
         boolean canPlay = age > 11 && hasBroom && passedMedicalCheck && trainingSessionsAttended > 3;
 
         // Вывод
-        System.out.println("Гарри может играть!");
+        if (canPlay == true) {
+            System.out.println("Гарри допущен к матчу: " + canPlay);
+        } else {
+            System.out.println("Гарри допущен к матчу: " + canPlay);
+        }
+
     }
 }
