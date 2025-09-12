@@ -8,7 +8,7 @@ public class MagicHourglass {
     }
 
     // Добавляем метод flip
-    public void flip() {
+    public void flip(int seconds) {
         if (seconds < 10 || seconds > 60) {
             secondsLeft = 60; // Если значение неверное, то время становится 60 секунд
         } else {
