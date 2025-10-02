@@ -1,0 +1,3 @@
+interface Auror {
+    void catchDarkWizard();
+}
